@@ -30,6 +30,8 @@
 #ifndef __LOG_UTIL_H__
 #define __LOG_UTIL_H__
 
+#include <loc_pla.h>
+
 #if defined (USE_ANDROID_LOGGING) || defined (ANDROID)
 // Android and LE targets with logcat support
 #include <utils/Log.h>
@@ -83,6 +85,12 @@ extern const char TO_AFW[];
 extern const char EXIT_TAG[];
 extern const char ENTRY_TAG[];
 extern const char EXIT_ERROR_TAG[];
+
+#define BUILD_TYPE_PROP_NA 0
+#define BUILD_TYPE_PROP_USER 1
+#define BUILD_TYPE_PROP_USERDEBUG 2
+#define BUILD_TYPE_PROP_INVALID 3
+extern int build_type_prop;
 
 /*=============================================================================
  *
