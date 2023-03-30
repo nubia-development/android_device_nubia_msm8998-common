@@ -174,11 +174,6 @@ PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey \
     android.hardware.drm@1.1.vendor
 
-# Fingerprint
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1 \
-    android.hardware.biometrics.fingerprint@2.1.vendor
-
 # For config.fs
 PRODUCT_PACKAGES += \
     fs_config_files
