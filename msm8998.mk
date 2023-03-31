@@ -182,12 +182,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect.vendor
 
-# Gatekeeper
-PRODUCT_PACKAGES += \
-    android.hardware.gatekeeper@1.0-impl \
-    android.hardware.gatekeeper@1.0-service \
-    android.hardware.gatekeeper@1.0.vendor
-
 # GPS
 PRODUCT_PACKAGES += \
     libgnss
@@ -238,12 +232,6 @@ PRODUCT_COPY_FILES += \
 # Keylayouts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl
-
-# Keymaster
-PRODUCT_PACKAGES += \
-    android.hardware.keymaster@3.0-impl \
-    android.hardware.keymaster@3.0-service \
-    android.hardware.keymaster@4.0.vendor
 
 # LiveDisplay native
 PRODUCT_PACKAGES += \
