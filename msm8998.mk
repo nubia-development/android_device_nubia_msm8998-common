@@ -129,6 +129,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     android.hardware.camera.provider@2.6:64 \
     libdng_sdk.vendor \
+    libpng.vendor:32 \
     vendor.qti.hardware.camera.device@1.0:64
 
 # Configstore
@@ -212,6 +213,7 @@ PRODUCT_PACKAGES += \
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.memory@1.0.vendor \
+    libhidlmemory.vendor:64 \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
@@ -221,7 +223,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ims-ext-common \
     ims_ext_common.xml \
-    libgui_shim
+    libgui_shim \
+    libion.vendor
 
 # IRQ
 PRODUCT_COPY_FILES += \
@@ -338,7 +341,9 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor \
     CarrierConfigOverlay \
     libavservices_minijail.vendor \
-    librmnetctl
+    libnetutils.vendor \
+    librmnetctl \
+    libsqlite.vendor:64
 
 PRODUCT_PACKAGES += \
     android.hardware.radio.c_shim@1.0 \
@@ -354,7 +359,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl.nubia_msm8998:64 \
     android.hardware.sensors@1.0-service.nubia_msm8998 \
-    libsensorndkbridge
+    libsensorndkbridge \
+    libpower.vendor
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
